@@ -18,5 +18,7 @@
 
 对于每副被识别的脸孔：
 
-![1525848093797](E:\My BLOGS BACKUP\ML kit\face_detection.png)	
+![1525848093797](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/face_detection.png)	
+
+
 
