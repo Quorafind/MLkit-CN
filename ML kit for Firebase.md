@@ -35,7 +35,7 @@ ML kit通过在单个SDK中集成了Google的Cloud Vision API、TensorFlow Lite�
 
 ## 下一步
 
-- 探索准备好的API：[文字识别]()、[人脸识别]()、[条形码扫描]()、[图像标签]()以及[地标识别]()。
+- 探索准备好的API：[文字识别](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text.md)、[人脸识别]()、[条形码扫描]()、[图像标签]()以及[地标识别]()。
 - 关于如何在您的个人应用中使用您的[个性化化模型]()。
-- 看一下在github上的[iOS]()和[Android]()实例。
-- 为[iOS]()或者[Android]()的codeLabs。
+- 看一下在github上的[iOS](https://github.com/firebase/quickstart-ios/tree/master/mlkit)和[Android](https://github.com/firebase/quickstart-android/tree/master/mlkit)实例。
+- 为[iOS](http://g.co/codelabs/mlkit-ios)或者[Android](http://g.co/codelabs/mlkit-android)的codeLabs。
