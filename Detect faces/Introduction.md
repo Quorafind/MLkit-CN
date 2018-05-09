@@ -16,6 +16,8 @@
 
 ## 结果例子
 
+![](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/1024px-Physicist_Stephen_Hawking_in_Zero_Gravity_NASA.jpg)
+
 对于每副被识别的脸孔：
 
 ![1525848093797](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/face_detection.png)	
