@@ -54,8 +54,8 @@ ML Kit并不是首先检测特征点并使用特征点作为识别整个人脸�
 
 在您的iOS或Android应用程序中使用脸部检测：
 
-- [iOS](https://firebase.google.com/docs/ml-kit/ios/detect-faces)
-- [Android](https://firebase.google.com/docs/ml-kit/android/detect-faces)
+- [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20iOS.md)
+- [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20Android.md)
 
 
 
