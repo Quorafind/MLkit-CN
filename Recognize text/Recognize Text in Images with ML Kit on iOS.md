@@ -1,6 +1,6 @@
 # 在iOS上使用ML Kit识别图像中的文本
 
-您可以使用ML Kit来识别图像中的文本，使用设备上的模型或云上的模型。请参阅[概述]()以了解每种方法的优点。
+您可以使用ML Kit来识别图像中的文本，使用设备上的模型或云上的模型。请参阅[概述](https://github.com/Quorafind/MLkit-CN/blob/master/ML%20kit%20for%20Firebase.md)以了解每种方法的优点。
 
 有关此API使用的示例，请参阅[GitHub](https://github.com/firebase/quickstart-ios/tree/master/mlkit)上的ML Kit快速入门示例，或者尝试使用[codelab](http://g.co/codelabs/mlkit-ios)。
 
