@@ -4,7 +4,7 @@
 
 文本识别可以自动完成信用卡，收据和名片等繁琐数据输入，或帮助组织照片。借助基于云的API，您可以从文档中提取文本，您可以使用它来增加辅助功能或翻译文档。应用程序甚至可以实时追踪真实世界的对象，例如通过读取列车上的数字。 
 
-**[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20iOS.md)** **[Android]()**
+**[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20iOS.md)** **[Android](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20Android.md)**
 
 ## 您可以在设备API或者云端API中选择
 
