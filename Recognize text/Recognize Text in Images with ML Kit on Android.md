@@ -375,7 +375,7 @@
 
 ### 3.从识别的文本块中提取文本
 
-如果文本识别操作成功，`FirebaseVisionCloudText`则会将对象传递给成功侦听器（success listener）。该对象包含图像中识别的文本。 
+如果文本识别操作成功，则会将`FirebaseVisionCloudText`对象传递给成功侦听器（success listener）。该对象包含图像中识别的文本。 
 
 例如： 
 

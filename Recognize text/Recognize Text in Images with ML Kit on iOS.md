@@ -57,7 +57,7 @@
 
    为了能够识别图像中的文本，将图像传递为`UIImage`或者`CMSampleBufferRef`到`VisionTextDetector`的`detect(in:)`方法：
 
-   1. #### 通过`VisionTextDetector`得到一个类的对象：
+   1. #### 得到一个`VisionTextDetector`实例：
 
       Swift：
 
@@ -384,7 +384,7 @@
 
 3. ### 从识别的文本块中提取文本
 
-   如果文本识别操作成功，`VisionCloudText`则会将对象传递给成功侦听器（Success Listener）。该对象包含图像中识别的文本。
+   如果文本识别操作成功，则会将`VisionCloudText`对象传递给成功侦听器（Success Listener）。该对象包含图像中识别的文本。
 
    例如：
 
