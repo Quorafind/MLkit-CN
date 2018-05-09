@@ -11,7 +11,14 @@ ML kit中文文档。欢迎协同翻译。
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20Android.md)
   - 人脸识别
+    - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Introduction.md)
+    - [概念]()
+    - [iOS]()
+    - [Android]()
   - 条形码扫描
+    - [概述]()
+    - [iOS]()
+    - [Android]()
   - 标注图像
   - 识别地标
 
