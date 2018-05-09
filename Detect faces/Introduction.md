@@ -4,7 +4,7 @@
 
 借助人脸识别功能，您可以获取所需的信息，以执行修饰自拍和美化人像等任务或从用户照片中生成头像。由于ML Kit可以执行实时的人脸识别，因此您可以将其用于视频聊天或会对玩家表情进行响应的游戏等应用程序。 
 
-[iOS]() [Android]()
+[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20iOS.md) [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20Android.md)
 
 ## 核心功能
 
