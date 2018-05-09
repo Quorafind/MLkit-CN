@@ -23,5 +23,8 @@ ML kit中文文档。欢迎协同翻译。
   - 识别地标
 
 - 自有模型
-  - 使用个性化模型
-  - 使用个性化TensorFlow Lite构建
+  - 自定义模型
+    - [概述]()
+    - [iOS]()
+    - [Android]()
+  - 使用自定义TensorFlow Lite构建
