@@ -16,9 +16,9 @@ ML kit中文文档。欢迎协同翻译。
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20Android.md)
   - 条形码扫描
-    - [概述]()
-    - [iOS]()
-    - [Android]()
+    - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Introduction.md)
+    - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20iOS.md)
+    - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20Android.md)
   - 标注图像
   - 识别地标
 

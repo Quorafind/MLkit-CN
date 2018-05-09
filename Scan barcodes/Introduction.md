@@ -4,7 +4,7 @@
 
 条形码是将信息从现实世界传递到应用程序的一种便捷方式。特别是，使用QR码等二维格式时，您可以编码结构化数据，如联系人信息或WiFi网络凭证。由于ML Kit可以自动识别和解析这些数据，因此当用户扫描条形码时，您的应用可以进行智能响应。
 
-[iOS]() [Android]()
+[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20iOS.md) [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20Android.md)
 
 ## 关键功能
 
@@ -16,14 +16,14 @@
 
 ## 示例结果
 
-![](E:\My BLOGS BACKUP\ML kit\MLkit-CN\Scan barcodes\EAN-Obst.jpg)	
+![](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/EAN-Obst.jpg)	
 
 | 结果   |                                          |
 | ------ | ---------------------------------------- |
 | 坐标   | (49,125), (172,125), (172,160), (49,160) |
 | 原始值 | 2404105001722                            |
 
-![](E:\My BLOGS BACKUP\ML kit\MLkit-CN\Scan barcodes\qrcode.png)	
+![](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/qrcode.png)	
 
 | 结果         |                                     |          |
 | ------------ | ----------------------------------- | -------- |
