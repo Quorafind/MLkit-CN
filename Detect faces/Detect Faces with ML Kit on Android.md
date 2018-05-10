@@ -84,7 +84,8 @@ FirebaseVisionFaceDetectorOptions options =
      /**
       * 得到当前图像需要补偿的角度
       */
-     private int getRotationCompensation(Activity activity, String cameraId)
+     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+     private int getRotationCompensation(String cameraId, Activity activity, Context context)
              throws CameraAccessException {
          // 得到设备当前与原始的角度的旋转差值
          // 然后照片一定要旋转回去相对的差值
@@ -94,7 +95,7 @@ FirebaseVisionFaceDetectorOptions options =
          // 在大多数的设备上，传感器的方向是90度。但是对于
          // 少数设备，这个值是270度。那么对于这些270度的设备
          // 必须让照片旋转额外的180 ((270 + 270) % 360) 度.
-         CameraManager cameraManager = (CameraManager) getSystemService(CAMERA_SERVICE);
+         CameraManager cameraManager = (CameraManager) context.getSystemService(CAMERA_SERVICE);
          int sensorOrientation = cameraManager
                  .getCameraCharacteristics(cameraId)
                  .get(CameraCharacteristics.SENSOR_ORIENTATION);
@@ -121,14 +122,13 @@ FirebaseVisionFaceDetectorOptions options =
          }
          return result;
      }
-     
-     ...
-     
-     // 得到正在使用CameraManager的camera的ID。随后:
-     int rotation = getRotationCompensation(this, MY_CAMERA_ID);
      ```
 
      然后，将`media.Image`对象和旋转值传递给`FirebaseVisionImage.fromMediaImage()`： 
+
+     ```
+     FirebaseVisionImage image = FirebaseVisionImage.fromMediaImage(mediaImage, rotation);
+     ```
 
    - 要从一个字节数组或`ByteBuffer`创建一个`FirebaseVisionImage`对象，首先按照上面的描述计算图像旋转角度。
 
@@ -136,26 +136,29 @@ FirebaseVisionFaceDetectorOptions options =
 
      ```java
      FirebaseVisionImageMetadata metadata = new FirebaseVisionImageMetadata.Builder()
-         .setWidth(1280)
-         .setHeight(720)
-         .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
-         .setRotation(rotation)
-         .build();
+             .setWidth(1280)
+             .setHeight(720)
+             .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
+             .setRotation(rotation)
+             .build();
      ```
 
      使用缓冲区或数组以及元数据对象来创建一个 `FirebaseVisionImage`对象： 
 
      ```java
      FirebaseVisionImage image = FirebaseVisionImage.fromByteBuffer(buffer, metadata);
-     
-     // 或者:
-     FirebaseVisionImage image = FirebaseVisionImage.fromByteArray(array, metadata);
+     // 或者: FirebaseVisionImage image = FirebaseVisionImage.fromByteArray(byteArray, metadata);
      ```
 
    - 要从文件创建`FirebaseVisionImage`对象，请将应用context和文件URI传递给`FirebaseVisionImage.fromFilePath()`： 
 
      ```java
-     FirebaseVisionImage image = FirebaseVisionImage.fromFilePath(context, uri);
+     FirebaseVisionImage image;
+     try {
+         image = FirebaseVisionImage.fromFilePath(context, uri);
+     } catch (IOException e) {
+         e.printStackTrace();
+     }
      ```
 
 2. 获取一个`FirebaseVisionTextDetector`实例：  
@@ -170,24 +173,24 @@ FirebaseVisionFaceDetectorOptions options =
 3. 最后，将图像传递给`detectInImage`方法： 
 
    ```java
-   Task<List<FirebaseVisionTextBlock>> result =
-       detector.detectInImage(image)
-       .addOnSuccessListener(
-           new OnSuccessListener<List<FirebaseVisionTextBlock>>() {
-             @Override
-             public void onSuccess(List<FirebaseVisionTextBlock> textBlocks) {
-               // 任务成功
-               // ...
-             }
-           })
-       .addOnFailureListener(
-           new OnFailureListener() {
-             @Override
-             public void onFailure(@NonNull Exception e) {
-               // 任务失败和异常
-               // ...
-             }
-           });
+   Task<List<FirebaseVisionFace>> result =
+           detector.detectInImage(image)
+                   .addOnSuccessListener(
+                           new OnSuccessListener<List<FirebaseVisionFace>>() {
+                               @Override
+                               public void onSuccess(List<FirebaseVisionFace> faces) {
+                                   // 任务成功
+                                   // ...
+                               }
+                           })
+                   .addOnFailureListener(
+                           new OnFailureListener() {
+                               @Override
+                               public void onFailure(@NonNull Exception e) {
+                                   // 任务失败并且报错
+                                   // ...
+                               }
+                           });
    ```
 
 ### 获取检测到的面部有关信息
@@ -201,14 +204,12 @@ for (FirebaseVisionFace face : faces) {
     float rotZ = face.getHeadEulerAngleZ();  // 头部转向上rotZ角
 
     // 如果特征点识别开启了（嘴，耳，眼，脸颊，还有鼻子可以检测）：
-    if (face.getLeftEarPosition() != null) {
-        PointF leftEarPos = face.getLeftEarPosition();
-    }
-    if (face.getNoseBasePosition() != null) {
-        PointF nosePos = face.getNoseBasePosition();
+    FirebaseVisionFaceLandmark leftEar = face.getLandmark(FirebaseVisionFaceLandmark.LEFT_EAR);
+    if (leftEar != null) {
+        FirebaseVisionPoint leftEarPos = leftEar.getPosition();
     }
 
-    // 如果辨认开启了：
+    // 如果辨认功能开启了:
     if (face.getSmilingProbability() != FirebaseVisionFace.UNCOMPUTED_PROBABILITY) {
         float smileProb = face.getSmilingProbability();
     }
@@ -216,7 +217,7 @@ for (FirebaseVisionFace face : faces) {
         float rightEyeOpenProb = face.getRightEyeOpenProbability();
     }
 
-    // 如果脸部追踪开启了：
+    // 如果脸部追踪开启了:
     if (face.getTrackingId() != FirebaseVisionFace.INVALID_ID) {
         int id = face.getTrackingId();
     }
