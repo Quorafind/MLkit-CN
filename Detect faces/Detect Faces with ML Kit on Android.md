@@ -2,13 +2,13 @@
 
 你可以在安卓上使用ML Kit来在图像和视频中识别人脸。
 
-请参阅GitHub上的[ML Kit快速入门示例](https://github.com/firebase/quickstart-android/tree/master/mlkit)，了解正在使用的此API的示例。 
+请参阅 GitHub 上的 [ML Kit 快速入门示例](https://github.com/firebase/quickstart-android/tree/master/mlkit)，了解正在使用的此API的示例。 
 
 ## 在您开始之前
 
-1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/android/setup)来开始您的工作。
+1. 如果您还没有将 Firebase 添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/android/setup)来开始您的工作。
 
-2. 在应用级的`build.gradle` 文件中为ML kit添加依赖:
+2. 在应用级的 `build.gradle`  文件中为ML kit添加依赖:
 
    ```java
    dependencies {
@@ -18,7 +18,7 @@
    }
    ```
 
-3. 可选但建议：如果您使用设备上的API，请将应用配置为在从Play商店安装应用后自动将ML模型下载到设备： 
+3. 可选但建议：如果您使用设备上的 API ，请将应用配置为在从 Play 商店安装应用后自动将 ML 模型下载到设备： 
 
    ```java
    <meta-data
@@ -33,7 +33,7 @@
 
 ### 设置人脸识别器
 
-在您对图像进行人脸识别以前，如果您想要修改任何关于人脸识别的默认设定，请通过`FirebaseVisionFaceDetectorOptions ` 对象来指定这些设定。您可以修改以下设定：
+在您对图像进行人脸识别以前，如果您想要修改任何关于人脸识别的默认设定，请通过 `FirebaseVisionFaceDetectorOptions `  对象来指定这些设定。您可以修改以下设定：
 
 | 设置         | 参数                        | 参数2                 | 解释                                                     |
 | ------------ | --------------------------- | --------------------- | -------------------------------------------------------- |
@@ -41,7 +41,7 @@
 | 识别特征点   | `NO_LANDMARKS` (默认)       | `ALL_LANDMARKS`       | 是否尝试识别面部“特征点”：眼睛，耳朵，鼻子，脸颊，嘴巴。 |
 | 辨认脸部     | `NO_CLASSIFICATIONS` (默认) | `ALL_CLASSIFICATIONS` | 是否将人脸分类为“微笑”和“睁眼”等类别。                   |
 | 脸部最小识别 | `float` (默认: `0.1f`)      |                       | 最小识别多大的脸部，与照片大小有关。                     |
-| 允许人脸追踪 | `false` (默认)              | `true`                | 是否分配人脸ID，可用于跟踪图像中的人脸。                 |
+| 允许人脸追踪 | `false` (默认)              | `true`                | 是否分配人脸 ID ，可用于跟踪图像中的人脸。               |
 
 例如，为了修改以上所有的默认设定，在下边的例子中构建一个 `FirebaseVisionFaceDetectorOptions `  对象：
 
@@ -58,7 +58,7 @@ FirebaseVisionFaceDetectorOptions options =
 
 ### 运行人脸识别器
 
-识别图像中的人脸，从任一个`Bitmap`，`media.Image`，`ByteBuffer`或者字节阵列创建一个`FirebaseVisionImage`对象，抑或在设备上的文件中选取。然后，传递`FirebaseVisionImage`对象到 `FirebaseVisionFaceDetector`的`detectInImage`方法。 
+识别图像中的人脸，从任一个`Bitmap`，`media.Image`，`ByteBuffer`或者字节阵列创建一个`FirebaseVisionImage `对象，抑或在设备上的文件中选取。然后，传递`FirebaseVisionImage`对象到 `FirebaseVisionFaceDetector`的`detectInImage`方法。 
 
 1. 从图像中创建一个`FirebaseVisionImage`对象。 
 
