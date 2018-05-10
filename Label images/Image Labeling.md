@@ -4,7 +4,7 @@
 
 图像标签可让您深入了解图像的内容。当你使用API时，你会得到一个被识别的实体列表：人物，事物，地点，活动等等。出现的每个标签都带有一个分数，表示ML模型与其相关性的置信度。利用这些信息，您可以执行诸如自动元数据生成和内容审核等任务。
 
-[iOS]() [Android]()
+[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/Label%20Images%20with%20ML%20Kit%20on%20iOS.md) [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/Label%20Images%20with%20ML%20Kit%20on%20iOS.md)
 
 ## 在设备上的API和云API之间进行选择
 
@@ -50,7 +50,7 @@
 
 ## 结果例子
 
-![](E:\My BLOGS BACKUP\ML kit\MLkit-CN\Label images\1024px-Valais_Cup_2013_-_OM-FC_Porto_13-07-2013_-_Brice_Samba_en_extension.jpg)	
+![](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/1024px-Valais_Cup_2013_-_OM-FC_Porto_13-07-2013_-_Brice_Samba_en_extension.jpg)	
 
 Photo: Clément Bucco-Lechat / Wikimedia Commons / CC BY-SA 3.0 
 
