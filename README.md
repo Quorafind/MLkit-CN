@@ -28,5 +28,5 @@ ML kit中文文档。欢迎协同翻译。
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20Android.md)
   - 使用自定义TensorFlow Lite版本
-    - [iOS]()
-    - [Android]()
+    - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20TensorFlow%20Lite%20build/Use%20a%20custom%20TensorFlow%20Lite%20build%20on%20iOS.md)
+    - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20TensorFlow%20Lite%20build/Use%20a%20custom%20TensorFlow%20Lite%20build%20on%20Android.md)
