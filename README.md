@@ -17,15 +17,15 @@ ML kit中文文档。欢迎提供修改意见。
     - [概念](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Concepts.md)
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Detect%20faces/Detect%20Faces%20with%20ML%20Kit%20on%20Android.md)
-  - 条形码扫描
+  - 条形码识别
     - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Introduction.md)
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Scan%20barcodes/Scan%20Barcodes%20with%20ML%20Kit%20on%20Android.md)
-  - 标注图像
+  - 图像标注
     - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/Image%20Labeling.md)
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/Label%20Images%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Label%20images/Label%20Images%20with%20ML%20Kit%20on%20Android.md)
-  - 识别地标
+  - 地标识别
     - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/Landmark%20Recognition.md)
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/Recognize%20Landmarks%20with%20ML%20Kit%20on%20iOS.md)
     - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/Recognize%20Landmarks%20with%20ML%20Kit%20on%20Android.md)
