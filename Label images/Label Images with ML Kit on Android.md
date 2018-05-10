@@ -2,13 +2,13 @@
 
 您可以使用ML Kit来识别图像中的文本，使用设备上的模型或云上的模型。请参阅[概述](https://github.com/Quorafind/MLkit-CN/blob/master/ML%20kit%20for%20Firebase.md)以了解每种方法的优点。
 
-有关此API使用的示例，请参阅[GitHub](https://github.com/firebase/quickstart-android/tree/master/mlkit)上的ML Kit快速入门示例，或者尝试使用[codelab](http://g.co/codelabs/mlkit-android)。
+有关此API使用的示例，请参阅 [GitHub](https://github.com/firebase/quickstart-android/tree/master/mlkit) 上的 ML Kit 快速入门示例，或者尝试使用 [codelab](http://g.co/codelabs/mlkit-android) 。
 
 ## 在您开始之前
 
 1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/android/setup)来开始您的工作。
 
-2. 在app-level的`build.gradle` 文件中为ML kit添加依赖:
+2. 在app-level的 `build.gradle` 文件中为ML kit添加依赖:
 
    ```java
    dependencies {
