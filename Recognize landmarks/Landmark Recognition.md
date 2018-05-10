@@ -4,7 +4,7 @@
 
 当您将图片传递给此API时，您会看到其中已识别的地标，以及每个地标的地理坐标和发现地标的图像区域。您可以使用此信息自动生成图像元数据，根据用户共享的内容为用户创建个性化体验等等。
 
-[iOS]() [Android]()
+[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/Recognize%20Landmarks%20with%20ML%20Kit%20on%20iOS.md) [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/Recognize%20Landmarks%20with%20ML%20Kit%20on%20Android.md)
 
 ## 核心功能
 
@@ -15,7 +15,7 @@
 
 ## 结果实例
 
-![](E:\My BLOGS BACKUP\ML kit\MLkit-CN\Recognize landmarks\680px-Bruegge_View_from_Rozenhoedkaai.jpg)		
+![](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20landmarks/680px-Bruegge_View_from_Rozenhoedkaai.jpg)		
 
 Photo: Arcalino / Wikimedia Commons / CC BY-SA 3.0 
 
