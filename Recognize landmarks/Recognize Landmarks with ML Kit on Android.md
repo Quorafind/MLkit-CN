@@ -2,11 +2,11 @@
 
 您可以使用ML kit来识别图片中的著名地标。
 
-有关此API使用的示例，请参阅[GitHub](https://github.com/firebase/quickstart-ios/tree/master/mlkit)上的ML Kit快速入门示例。
+有关此API使用的示例，请参阅[GitHub](https://github.com/firebase/quickstart-android/tree/master/mlkit)上的ML Kit快速入门示例。
 
 ## 在您开始之前
 
-1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/ios/setup)来开始您的工作。
+1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/android/setup)来开始您的工作。
 
 2. 在app-level的`build.gradle` 文件中为ML kit添加依赖:
 

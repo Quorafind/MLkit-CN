@@ -2,11 +2,11 @@
 
 你可以在安卓上使用ML Kit来在图像和视频中识别人脸。
 
-请参阅GitHub上的[ML Kit快速入门示例](https://github.com/firebase/quickstart-ios/tree/master/mlkit)，了解正在使用的此API的示例。 
+请参阅GitHub上的[ML Kit快速入门示例](https://github.com/firebase/quickstart-android/tree/master/mlkit)，了解正在使用的此API的示例。 
 
 ## 在您开始之前
 
-1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/ios/setup)来开始您的工作。
+1. 如果您还没有将Firebase添加到您的程序当中，那您可以从[开始指南](https://firebase.google.com/docs/android/setup)来开始您的工作。
 
 2. 在应用级的`build.gradle` 文件中为ML kit添加依赖:
 
