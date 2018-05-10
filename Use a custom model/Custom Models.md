@@ -4,7 +4,7 @@
 
 使用Firebase托管您的TensorFlow Lite模型或将其与您的应用程序打包在一起。然后，使用ML Kit SDK来使用您的自定义模型的最佳版本构建应用。如果您使用Firebase托管您的模型，ML Kit会自动更新您的用户的所用版本。
 
-[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20iOS.md) [Android]()
+[iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20iOS.md) [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20Android.md)
 
 ## 核心功能
 

@@ -26,5 +26,5 @@ ML kit中文文档。欢迎协同翻译。
   - 自定义模型
     - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Custom%20Models.md)
     - [iOS](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20iOS.md)
-    - [Android]()
+    - [Android](https://github.com/Quorafind/MLkit-CN/blob/master/Use%20a%20custom%20model/Use%20a%20TensorFlow%20Lite%20model%20for%20inference%20with%20ML%20Kit%20on%20Android.md)
   - 使用自定义TensorFlow Lite构建
