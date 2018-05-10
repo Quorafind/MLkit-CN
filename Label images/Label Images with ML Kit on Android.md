@@ -232,7 +232,7 @@
 
 2. ###  运行图像标注器
 
-   为了识别图像中的文本，从任一个`Bitmap`，`media.Image`，`ByteBuffer`，字节阵列，或在设备上的文件中创建一个`FirebaseVisionImage`对象。然后，传递`FirebaseVisionImage`对象到`FirebaseCloudVisionLabelDetector`的`detectInImage`方法。
+   为了进行图片标注，从任一个`Bitmap`，`media.Image`，`ByteBuffer`，字节阵列，或在设备上的文件中创建一个`FirebaseVisionImage`对象。然后，传递`FirebaseVisionImage`对象到`FirebaseCloudVisionLabelDetector`的`detectInImage`方法。
 
    1. #### 从图像中创建一个`FirebaseVisionImage`对象。如果您使用`Bitmap`则图像标签器运行速度最快或者如果您使用camera2 API，一种名为`media.Image`的JPEG格式，也可最快。当然如果可能，建议您使用（后者）这种格式。
 

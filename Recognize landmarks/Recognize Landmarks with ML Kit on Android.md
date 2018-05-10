@@ -44,7 +44,7 @@ FirebaseVisionCloudDetectorOptions options =
 
 ## 运行地标识别器
 
-为了识别图像中的文本，从任一个`Bitmap`，`media.Image`，`ByteBuffer`，字节阵列，或在设备上的文件中创建一个`FirebaseVisionImage`对象。然后，传递`FirebaseVisionImage`对象到 `FirebaseVisionCloudLandmarkDetector` 的`detectInImage`方法。
+为了进行地标识别，从任一个`Bitmap`，`media.Image`，`ByteBuffer`，字节阵列，或在设备上的文件中创建一个`FirebaseVisionImage`对象。然后，传递`FirebaseVisionImage`对象到 `FirebaseVisionCloudLandmarkDetector` 的`detectInImage`方法。
 
 1. 从您的图像中创建一个 `FirebaseVisionImage`  对象。
 

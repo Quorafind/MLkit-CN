@@ -2,11 +2,11 @@
 
 ML kit中文文档。欢迎提供修改意见。
 
-该文档将与官方文档保持同步更新。
+该文档将与官方文档保持同步更新。2018/5/10更新。
 
 目录如下：
 
-- [介绍](https://github.com/Quorafind/MLkit-CN/blob/master/ML%20kit%20for%20Firebase.md)
+- [介绍](https://github.com/Quorafind/MLkit-CN/blob/master/ML%20kit%20for%20Firebase.md)（请先看这个）
 - 视觉
   - 文本识别
     - [概述](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Introduction.md)

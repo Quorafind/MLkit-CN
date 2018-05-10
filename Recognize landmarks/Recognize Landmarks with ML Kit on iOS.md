@@ -62,9 +62,9 @@ Objective-C：
 
 在下一步中，创建Cloud识别器对象时传递该`VisionCloudDetectorOptions`对象。 
 
-### 运行文本识别器
+### 运行地标识别器
 
-为了能够识别图像中的文本，将图像传递为`UIImage`或者`CMSampleBufferRef`到`VisionCloudLandmarkDetector`的`detect(in:)`方法：
+为了能够识别图像中的地标，将图像传递为`UIImage`或者`CMSampleBufferRef`到`VisionCloudLandmarkDetector`的`detect(in:)`方法：
 
 1. #### 得到一个`VisionCloudLandmarkDetector`实例：
 
