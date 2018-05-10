@@ -352,7 +352,7 @@
          image.metadata = metadata;
          ```
 
-   3. 然后，将图像传递给该`detect(in:)`方法： 
+   3. #### 然后，将图像传递给该`detect(in:)`方法： 
 
       Swift：
 
