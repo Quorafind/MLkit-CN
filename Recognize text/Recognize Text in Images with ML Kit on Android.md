@@ -254,7 +254,8 @@
         /**
          * 得到当前图像需要补偿的角度
          */
-        private int getRotationCompensation(Activity activity, String cameraId)
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+        private int getRotationCompensation(String cameraId, Activity activity, Context context)
                 throws CameraAccessException {
             // 得到设备当前与原始的角度的旋转差值
             // 然后照片一定要旋转回去相对的差值
@@ -264,11 +265,12 @@
             // 在大多数的设备上，传感器的方向是90度。但是对于
             // 少数设备，这个值是270度。那么对于这些270度的设备
             // 必须让照片旋转额外的180 ((270 + 270) % 360) 度.
-            CameraManager cameraManager = (CameraManager) getSystemService(CAMERA_SERVICE);
+            CameraManager cameraManager = (CameraManager) context.getSystemService(CAMERA_SERVICE);
             int sensorOrientation = cameraManager
                     .getCameraCharacteristics(cameraId)
                     .get(CameraCharacteristics.SENSOR_ORIENTATION);
             rotationCompensation = (rotationCompensation + sensorOrientation + 270) % 360;
+        
         
             // 返回相关的FirebaseVisionImageMetadata的旋转值。
             int result;
@@ -291,11 +293,6 @@
             }
             return result;
         }
-        
-        ...
-        
-        // 得到正在使用CameraManager的camera的ID。随后:
-        int rotation = getRotationCompensation(this, MY_CAMERA_ID);
         ```
 
         然后，将`media.Image`对象和旋转值传递给`FirebaseVisionImage.fromMediaImage()`： 
@@ -310,20 +307,18 @@
 
         ```java
         FirebaseVisionImageMetadata metadata = new FirebaseVisionImageMetadata.Builder()
-            .setWidth(1280)
-            .setHeight(720)
-            .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
-            .setRotation(rotation)
-            .build();
+                .setWidth(1280)
+                .setHeight(720)
+                .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
+                .setRotation(rotation)
+                .build();
         ```
 
         使用`buffer`或数组以及元数据对象来创建一个 `FirebaseVisionImage`对象： 
 
         ```java
         FirebaseVisionImage image = FirebaseVisionImage.fromByteBuffer(buffer, metadata);
-        
-        // 或者:
-        FirebaseVisionImage image = FirebaseVisionImage.fromByteArray(array, metadata);
+        // 或者: FirebaseVisionImage image = FirebaseVisionImage.fromByteArray(byteArray, metadata);
         ```
 
       - 要从文件创建`FirebaseVisionImage`对象，请将应用context和文件URI传递给`FirebaseVisionImage.fromFilePath()`： 
@@ -390,7 +385,7 @@ for (FirebaseVisionCloudText.Page page: firebaseVisionCloudText.getPages()) {
         List<FirebaseVisionCloudText.DetectedLanguage> blockLanguages =
                 block.getTextProperty().getDetectedLanguages();
         float blockConfidence = block.getConfidence();
-        // And so on: Paragraph, Word, Symbol
+        // 还有更多: 文段, 词语, 符号
     }
 }
 ```

@@ -61,6 +61,8 @@ options.minFaceSize = CGFloat(0.1)
 options.isTrackingEnabled = true
 ```
 
+[ViewController.swift](https://github.com/firebase/quickstart-ios/blob/f8071ccc4de7467a498f0e11714ff0dba33fa9e3/mlkit/MLKitExample/ViewController.swift#L145-L150)
+
 Objective-C：
 
 ```objective-c
@@ -82,7 +84,7 @@ options.isTrackingEnabled = YES;
 
    ```swift
    lazy var vision = Vision.vision()
-   let faceDetector = vision.faceDetector(options: options)  // Check console for errors.
+   let faceDetector = vision.faceDetector(options: options)  // 检查错误.
    // 或者使用以下默认设定:
    // let faceDetector = vision?.faceDetector()
    ```

@@ -57,20 +57,28 @@
 
    为了能够识别图像中的文本，将图像传递为`UIImage`或者`CMSampleBufferRef`到`VisionTextDetector`的`detect(in:)`方法：
 
-   1. #### 得到一个`VisionTextDetector`实例：
+   1. #### 得到一个`VisionTextDetector`实例并且保持引用：
 
       Swift：
 
       ```swift
       lazy var vision = Vision.vision()
-      let textDetector = vision.textDetector()  // 检测错误.
+      var textDetector: VisionTextDetector?
+      
+      // ...
+      
+      textDetector = vision.textDetector()  // 检查错误.
       ```
 
       Objective-C：
 
       ```objective-c
+      FIRVisionTextDetector *textDetector;
+      
+      // ...
+      
       FIRVision *vision = [FIRVision vision];
-      FIRVisionTextDetector *detector = [vision textDetector];
+      textDetector = [vision textDetector];
       ```
 
    2. #### 使用`UIImage`或者`CMSampleBufferRef`创建一个`VisionImage`对象:
@@ -137,7 +145,7 @@
       ```swift
       textDetector.detect(in: visionImage) { (features, error) in
         guard error == nil, let features = features, !features.isEmpty else {
-          //错误，您应该检查控制台来寻找错误
+          // 错误，您应该检查控制台来寻找错误
           // ...
           return
         }
@@ -157,7 +165,7 @@
         if (error != nil) {
           return;
         } else if (features != nil) {
-          // Recognized text
+          // 识别文本
         }
       }];
       ```
