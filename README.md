@@ -4,6 +4,12 @@ ML Kit 中文文档，欢迎提供修改意见。
 
 本文档将与官方文档保持同步更新。最近更新于 2018/5/11。
 
+
+
+**更新文档，将文档放在：[mlkit.cn](http://mlkit.cn) 。更好的阅读体验**
+
+
+
 目录如下：
 
 - [介绍](https://github.com/Quorafind/MLkit-CN/blob/master/ML%20kit%20for%20Firebase.md)（请先看这个）
