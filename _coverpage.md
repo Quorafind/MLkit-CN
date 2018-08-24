@@ -10,6 +10,6 @@
 * 现成的 API 助你开发
 * 为高级开发人员提供可拓展空间
 
-[GitHub](https://github.com/Quorafind/MLkit-CN)
+[GitHub](https://github.com/Quorafind/MLkit-CN/tree/master)
 [Get Started](/README)
 

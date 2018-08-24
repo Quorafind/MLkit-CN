@@ -1,6 +1,6 @@
 * 介绍
-  - [文档详情](/About Me/ML kit for Firebase.md)
-  - [关于](/About Me/About me.md)
+  - [文档详情](./About Me/ML kit for Firebase.md)
+  - [关于](./About Me/About me.md)
 * 视觉
 
   * 文本识别
